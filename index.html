@@ -74,7 +74,7 @@
             <li><a href="#mu-slider">HOME</a></li>
             <li><a href="#mu-about-us">ABOUT US</a></li>                       
             <li><a href="#mu-restaurant-menu"></a></li>                       
-            <li><a href="#mu-reservation">CONTACT US</a></li>                       
+            <li><a href="#mu-form">CONTACT US</a></li>                       
             <li><a href="#mu-gallery">GALLERY</a></li>
             <li><a href="#mu-chef">BROCHURE</a></li>
             <li><a href="#mu-latest-news"></a></li> 
@@ -96,68 +96,174 @@
  
 
   <!-- Start slider  -->
-  <section id="mu-slider">
-    <div class="mu-slider-area"> 
-      <!-- Top slider -->
-      <div class="mu-top-slider">
-        <!-- Top slider single slide -->
-        <div class="mu-top-slider-single">
-          <img src="assets/img/slider/1.jpg" alt="img">
-          <!-- Top slider content -->
-          <!-- <div class="mu-top-slider-content">
-            <span class="mu-slider-small-title">Welcome</span>
-            <h2 class="mu-slider-title">TO THE SPICYX</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>           
-            <a href="#" class="mu-readmore-btn">READ MORE</a>
-          </div> -->
-          <!-- / Top slider content -->
+  <section id="home">
+  <script src="assets/js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:500,d:1000,x:0,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,rX:20,rY:90},{b:0,d:4000,rX:0,e:{rX:1}}],
+              [{b:-1,d:1,rY:-20},{b:0,d:4000,rY:-90,e:{rY:7}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:3000,sX:1,sY:1,e:{sX:1,sY:1}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:5000,sX:1,sY:1,e:{sX:3,sY:3}}],
+              [{b:-1,d:1,tZ:300},{b:0,d:2000,o:1},{b:3500,d:3500,tZ:0,e:{tZ:1}}],
+              [{b:-1,d:1,x:20,p:{x:{o:33,r:0.5}}},{b:0,d:1000,x:0,o:0.5,e:{x:3,o:1},p:{x:{dl:0.05,o:33},o:{dl:0.02,o:68,rd:2}}},{b:1000,d:1000,o:1,e:{o:1},p:{o:{dl:0.05,o:68,rd:2}}}],
+              [{b:-1,d:1,da:[0,700]},{b:0,d:600,da:[700,700],e:{da:1}}],
+              [{b:600,d:1000,o:0.4}],
+              [{b:-1,d:1,da:[0,400]},{b:200,d:600,da:[400,400],e:{da:1}}],
+              [{b:800,d:1000,o:0.4}],
+              [{b:-1,d:1,sX:1.1,sY:1.1},{b:0,d:1600,o:1},{b:1600,d:5000,sX:0.9,sY:0.9,e:{sX:1,sY:1}}],
+              [{b:0,d:1000,o:1,p:{o:{o:4}}}],
+              [{b:1000,d:1000,o:1,p:{o:{o:4}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1600;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin-ext,cyrillic-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:450px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
         </div>
-        <!-- / Top slider single slide -->    
-         <!-- Top slider single slide -->
-        <div class="mu-top-slider-single">
-          <img src="assets/img/slider/2.jpg" alt="img">
-          <!-- Top slider content -->
-          <!-- <div class="mu-top-slider-content">
-            <span class="mu-slider-small-title">The Real</span>
-            <h2 class="mu-slider-title">GREEN FOODS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>           
-            <a href="#" class="mu-readmore-btn">READ MORE</a>
-          </div> -->
-          <!-- / Top slider content -->
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:450px;overflow:hidden;">
+            <!-- <div>
+                <img data-u="image" src="images/slider2.png"/>
+                
+            </div> -->
+            <div>
+                <img data-u="image" src="assets/img/slider/5.jpg" />
+                
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/slider/6.jpg" />
+                
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/slider/2.jpg" />
+                
+            </div>
+            
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:13px;height:13px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
         </div>
-        <!-- / Top slider single slide --> 
-         <!-- Top slider single slide -->
-        <div class="mu-top-slider-single">
-          <img src="assets/img/slider/3.jpg" alt="img">
-          <!-- Top slider content -->
-          <!-- <div class="mu-top-slider-content">
-            <span class="mu-slider-small-title">Delicious</span>
-            <h2 class="mu-slider-title">SPICY MASALAS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>           
-            <a href="#" class="mu-readmore-btn">READ MORE</a>
-          </div> -->
-          <!-- / Top slider content -->
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
         </div>
-        <!-- / Top slider single slide -->    
-      </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
     </div>
-  </section>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    </section>
+
+
+
+
+  
   <!-- End slider  -->
 
   <!-- Start Reservation section -->
-  <section id="mu-reservation">
+  <section id="mu-form">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="mu-reservation-area">
             <div class="mu-title">
-              <span class="mu-subtitle"></span>
-              <h2>Form</h2>
+              <span class="mu-subtitle">Get in touch</span>
+              <h2>Contact-us</h2>
               <i class="fa fa-spoon"></i>              
               <span class="mu-title-bar"></span>
             </div>
             <div class="mu-reservation-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quidem autem iusto, perspiciatis, amet, quaerat blanditiis ducimus eius recusandae nisi aut totam alias consectetur et.</p>
+              <p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quidem autem iusto, perspiciatis, amet, quaerat blanditiis ducimus eius recusandae nisi aut totam alias consectetur et.</p>
               <form class="mu-reservation-form">
                 <div class="row">
                   <div class="col-md-6">
@@ -208,7 +314,9 @@
                       <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
                     </div>
                   </div>
+                  <div style="text-align: center;">
                   <button type="submit" class="mu-readmore-btn">submit</button>
+                  </div>
                 </div>
               </form>      
             </div>
@@ -230,35 +338,36 @@
         <div class="col-md-12">
           <div class="mu-about-us-area">
             <div class="mu-title">
-              <span class="mu-subtitle">Discover</span>
-              <h2>ABOUT US</h2>
+              <span class="mu-subtitle">Know more</span>
+              <h2 style="color: white;">ABOUT US</h2>
               <i class="fa fa-spoon"></i>              
               <span class="mu-title-bar"></span>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="mu-about-us-left">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus aliquid, itaque illum assumenda repellendus dolorem, dolore numquam totam saepe, porro delectus, libero enim odio quo. Explicabo ex sapiente sit eligendi, facere voluptatum! Quia vero rerum sunt porro architecto corrupti eaque corporis eum, enim soluta, perferendis dignissimos, repellendus, beatae laboriosam.</p>                              
-                  <ul>
+                 <p>Dev Ganesh Residential and commercial aims to add more happiness and comfort in your life. We provide residential plots at affordable rates with well-paved roads; 2 & 3 BHK duplex spacious modern bungalows equipped with all luxurious facilities and surrounded by blissful atmosphere at prime location of Dholka. Moreover, we have incorporated shops fashioned with glassed and road facing manner which enhances your wealth as well as the growth of Dholka city.</p>                              
+                  <!-- <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>                    
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>
-                  </ul>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique molestias est quod reprehenderit, quibusdam nam qui, quam magnam. Ex.</p>  
+                  </ul> -->
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique molestias est quod reprehenderit, quibusdam nam qui, quam magnam. Ex.</p> -->  
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mu-about-us-right">                
-                 <ul class="mu-abtus-slider">                 
-                   <li><img src="assets/img/about-us/abtus-img-1.png" alt="img"></li>
+                  <img src="assets/img/about-us/1.jpg" alt="img" style="position: relative; width: 100%;">
+                 <!-- <ul class="mu-abtus-slider">                 
+                   <li></li>
                    <li><img src="assets/img/about-us/abtus-img-2.png" alt="img"></li>
                    <li><img src="assets/img/about-us/abtus-img-6.png" alt="img"></li>
                    <li><img src="assets/img/about-us/abtus-img-4.png" alt="img"></li>
                    <li><img src="assets/img/about-us/abtus-img-5.png" alt="img"></li>
-                 </ul>
+                 </ul> -->
                 </div>
               </div>
             </div>
@@ -997,7 +1106,7 @@
                 </div>               
                 <!-- End single gallery image -->
                 <!-- start single gallery image -->
-                <div class="mu-single-gallery col-md-4 mix dessert">                  
+                <!-- <div class="mu-single-gallery col-md-4 mix dessert">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
                       <a href="#"><img alt="img" src="assets/img/gallery/small/9.jpg"></a>
@@ -1008,7 +1117,7 @@
                       </a>
                     </div>                  
                   </div>
-                </div>
+                </div> -->
                 <!-- End single gallery image -->                         
               </div>
             </div>
@@ -1039,31 +1148,31 @@
                   <li>
                     <div class="mu-testimonial-single">                   
                       <div class="mu-testimonial-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                        <p>Dev Ganesh Residency has wide residential property in the budget. It is been designed in a way that matches all the requirements while buying a new dream home.</p>
                       </div>
-                      <div class="mu-testimonial-bio">
+                      <!-- <div class="mu-testimonial-bio">
                         <p>- David Muller</p>                      
-                      </div>
+                      </div> -->
                     </div>
                   </li>
                    <li>
                     <div class="mu-testimonial-single">                   
                       <div class="mu-testimonial-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                        <p>Dev Ganesh Commercial inherits shops located at prime location and developed so nicely.</p>
                       </div>
-                      <div class="mu-testimonial-bio">
+                      <!-- <div class="mu-testimonial-bio">
                         <p>- David Muller</p>                      
-                      </div>
+                      </div> -->
                     </div>
                   </li>
                    <li>
                     <div class="mu-testimonial-single">                   
                       <div class="mu-testimonial-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur ducimus cumque iure modi nesciunt recusandae eligendi vitae voluptatibus, voluptatum tempore, ipsum nisi perspiciatis. Rerum nesciunt fuga ab natus, dolorem?</p>
+                        <p>An excellent project at the prime location of Dholka which has It's Residential, Commercial, and Plots that matches a basic home or shop buyer requirements. Best deal to get at the best price!!</p>
                       </div>
-                      <div class="mu-testimonial-bio">
+                     <!--  <div class="mu-testimonial-bio">
                         <p>- David Muller</p>                      
-                      </div>
+                      </div> -->
                     </div>
                   </li>
                 </ul>
@@ -1094,7 +1203,7 @@
   <!-- End Subscription section -->
 
   <!-- Start Chef Section -->
-  <section id="mu-chef">
+   <section id="mu-chef">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -1106,144 +1215,50 @@
               <span class="mu-title-bar"></span>
             </div>
             <div class="mu-chef-content">
-              <ul class="mu-chef-nav">
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>blah blah</h4>
-                      <span></span>
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Kelly Wenzel</h4>
-                      <!-- <span>Pizza Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Greg Hong</h4>
-                      <!-- <span>Grill Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Marty Fukuda</h4>
-                      <!-- <span>Burger Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>  
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Simon Jonson</h4>
-                      <!-- <span>Head Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Kelly Wenzel</h4>
-                      <!-- <span>Pizza Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Greg Hong</h4>
-                      <!-- <span>Grill Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>
-                <li>
-                  <div class="mu-single-chef">
-                    <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
-                    </figure>
-                    <div class="mu-single-chef-info">
-                      <h4>Marty Fukuda</h4>
-                      <!-- <span>Burger Chef</span> -->
-                    </div>
-                    <!-- <div class="mu-single-chef-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div> -->
-                  </div>
-                </li>                      
-              </ul>
+              <div class="col-md-4">
+              <div class="card" style="text-align: center;">
+                <img src="assets/img/brochure/7.jpg" alt="Avatar" style="width:100%">
+                <!-- <div class="container"> -->
+                  <h4><b>Residential</b></h4> 
+                  <p>(2&3 BHK DUPLEX BUNGLOWS)</p> 
+                <!-- </div> -->
+                <a href="assets/img/brochure/1.pdf" style=" margin-bottom: 5px;">download</a>
+              </div>
+              <!-- <div class="download-btn" style="text-align: center; margin-bottom: 15px;">
+                <a href="assets/img/brochure/1.pdf">download</a>
+              </div> -->
+              </div>
+              <div class="col-md-4">
+              <div class="card" style="text-align: center;">
+                <img src="assets/img/brochure/7.jpg" alt="Avatar" style="width:100%">
+                <!-- <div class="container"> -->
+                  <h4><b>Residential</b></h4> 
+                  <p>(PLOTS)</p> 
+                <!-- </div> -->
+                <a href="assets/img/brochure/2.pdf" style=" margin-bottom: 5px;">download</a>
+              </div>
+              </div>
+              <div class="col-md-4">
+              <div class="card" style="text-align: center;">
+                <!-- <div> -->
+                <img src="assets/img/brochure/7.jpg" style="width:100%">
+                <!-- <div class="container"> -->
+                  <h4><b>Commercial</b></h4> 
+                  <p>(SHOPS & SHOWROOMS)</p> 
+                <!-- </div> -->
+                <a href="assets/img/brochure/4.pdf" style="; margin-bottom: 5px;">download</a>
+              </div>
+              <!-- <div class="download-btn" style="text-align: center; margin-bottom: 15px;">
+                <a href="assets/img/brochure/4.pdf">download</a>
+              </div> -->
+              </div>
+              <!-- <div class="card col-md-4">
+                <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Jane Doe</b></h4> 
+                  <p>Interior Designer</p> 
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
