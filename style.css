@@ -2766,7 +2766,7 @@ textarea.input100 {
  FOOTER SECTION
 ====================*/
 #mu-footer {
-  background-color: #444;
+  background-color: black;
   display: inline;
   float: left;
   padding: 50px 0;
@@ -2778,14 +2778,14 @@ textarea.input100 {
   width: 100%;
   text-align: center;
 }
-#mu-footer .mu-footer-area .mu-footer-social {
+#mu-footer .mu-footer-social {
   display: inline;
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
 }
-#mu-footer .mu-footer-area .mu-footer-social a {
+#mu-footer .mu-footer-social a {
   background-color: #555;
   color: #fff;
   display: inline-block;
@@ -2801,20 +2801,6 @@ textarea.input100 {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-}
-#mu-footer .mu-footer-area .mu-footer-copyright {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-footer .mu-footer-area .mu-footer-copyright p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: #fff;
-}
-#mu-footer .mu-footer-area .mu-footer-copyright p a {
-  color: #fff;
 }
 
 
@@ -3055,6 +3041,7 @@ textarea.input100 {
 
   .mu-title {
     margin-bottom: 0;
+    margin-top: 20px;
   }
 
   #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
@@ -3185,7 +3172,7 @@ textarea.input100 {
     padding-top: 22.5%;
   }
 
-  #mu-footer .mu-footer-area .mu-footer-social a {
+  #mu-footer .mu-footer-social a {
     font-size: 18px;
     margin: 5px;
     padding: 5px;
