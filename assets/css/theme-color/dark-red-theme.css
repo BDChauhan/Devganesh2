@@ -40,7 +40,28 @@ Author URI : http://www.markups.io/
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #AB253D;
+  border: 2px solid rgb(171,37,61);
+  padding: 10px 20px;
+  margin-top: 5px;
 }
+
+@media (min-width: 770px) and (max-width: 1200px){
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #AB253D;
+  border: 2px solid rgb(171,37,61);
+  padding: 10px 20px;
+  margin-top: 13px;
+}
+}
+@media (min-width: 1201px){
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #AB253D;
+  border: 2px solid rgb(171,37,61);
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+}
+
 
 #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
   color: #AB253D;
